@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
@@ -5265,22 +5265,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <rectangle x1="3.5" y1="-0.6" x2="3.9" y2="0.6" layer="51"/>
 <rectangle x1="-0.6" y1="-3.9" x2="0.6" y2="-3.5" layer="51"/>
 </package>
-<package name="CTRIM3050.504">
-<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
- 5 S-Triko 160 V DC for PCB mounting,&lt;p&gt;
- Adjustable from one side, vertical to PCB</description>
-<wire x1="-0.7" y1="0.4" x2="0.6" y2="-0.9" width="0.1524" layer="21"/>
-<wire x1="-0.2" y1="0.9" x2="1.1" y2="-0.4" width="0.1524" layer="21"/>
-<wire x1="-2.4" y1="1" x2="2.8" y2="1" width="0.254" layer="21" curve="-137.924978"/>
-<wire x1="-2.4" y1="-1" x2="2.8" y2="-1" width="0.254" layer="21" curve="137.924978"/>
-<wire x1="-2.4" y1="1" x2="-2.4" y2="-1" width="0.254" layer="51" curve="42.075022"/>
-<wire x1="2.8" y1="-1" x2="2.8" y2="1" width="0.254" layer="51" curve="42.075022"/>
-<circle x="0.2" y="0" radius="1" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="1.1"/>
-<pad name="2" x="2.5" y="0" drill="1.1"/>
-<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="CTRIM3050.505">
 <description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
  5 S-Triko 160 V DC for PCB mounting,&lt;p&gt;
@@ -5708,6 +5692,50 @@ diameter 8.6 mm, grid 3.55 mm</description>
 <vertex x="0" y="2.032" curve="-90"/>
 <vertex x="2.032" y="0" curve="-90"/>
 </polygon>
+</package>
+<package name="RTRIM3296W-SIDEWAYS">
+<wire x1="4.699" y1="9.652" x2="4.699" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-4.699" y1="-0.381" x2="-4.699" y2="9.652" width="0.1524" layer="21"/>
+<wire x1="-4.699" y1="9.652" x2="4.699" y2="9.652" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<text x="-4.627" y="9.889" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="4.644" y="9.893" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-right">&gt;VALUE</text>
+<wire x1="-4.699" y1="-0.381" x2="-3.6322" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-1.4478" y1="-0.381" x2="-1.0922" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="1.0922" y1="-0.381" x2="1.4478" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-0.381" x2="3.6322" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="5.588" x2="0" y2="4.572" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.572" x2="0.508" y2="5.588" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="5.588" x2="1.016" y2="4.572" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="4.572" x2="1.524" y2="5.588" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="5.588" x2="-1.016" y2="4.572" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="5.588" x2="1.778" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="4.572" x2="-1.524" y2="5.588" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="5.588" x2="-1.778" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.143" x2="-2.54" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.143" x2="2.54" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.143" x2="0" y2="4.318" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.318" x2="-0.254" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="3.81" x2="0.254" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="3.81" x2="0" y2="4.318" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="21"/>
+</package>
+<package name="CTRIM3050.504">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 5 S-Triko 160 V DC for PCB mounting,&lt;p&gt;
+ Adjustable from one side, vertical to PCB</description>
+<wire x1="-0.7" y1="0.4" x2="0.6" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="-0.2" y1="0.9" x2="1.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.143" x2="2.54" y2="1.143" width="0.1524" layer="21" curve="-135"/>
+<wire x1="-2.54" y1="-1.143" x2="2.54" y2="-1.143" width="0.1524" layer="21" curve="135"/>
+<circle x="0.2" y="0" radius="1" width="0.1524" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="2" x="2.5" y="0" drill="1.1" diameter="1.9304" shape="octagon"/>
+<text x="0" y="3.048" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.048" size="0.8128" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -8296,6 +8324,16 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="3296W-SIDE" package="RTRIM3296W-SIDEWAYS">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAPACITOR-TRIM" prefix="C" uservalue="yes">
@@ -8477,8 +8515,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </device>
 <device name="GYC40000" package="GYC40000">
 <connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="E" pad="P$2 P$3"/>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8602,8 +8640,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="C1" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="025-025X050"/>
 <part name="R1" library="A_butts" deviceset="RESISTOR" device="PTH-AXIAL-5.08MM"/>
 <part name="Q1" library="A_butts" deviceset="TRANSISTOR_NPN" device="TO-92-AMMO-EBC" value="1N3904"/>
-<part name="C2" library="A_butts" deviceset="CAPACITOR-TRIM" device="GYC40000"/>
-<part name="R2" library="A_butts" deviceset="POTENTIOMETER" device="3296W"/>
+<part name="C2" library="A_butts" deviceset="CAPACITOR-TRIM" device="3050.504"/>
+<part name="R2" library="A_butts" deviceset="POTENTIOMETER" device="3296W-SIDE"/>
 <part name="GND1" library="A_butts" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="A_butts" deviceset="VCC" device=""/>
 <part name="GND2" library="A_butts" deviceset="GND" device=""/>
@@ -8623,7 +8661,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instance part="R1" gate="G$1" x="63.5" y="88.9" rot="R90"/>
 <instance part="Q1" gate="G$1" x="60.96" y="73.66"/>
 <instance part="C2" gate="G$1" x="71.12" y="53.34"/>
-<instance part="R2" gate="G$1" x="48.26" y="73.66" rot="MR180"/>
+<instance part="R2" gate="G$1" x="48.26" y="73.66" rot="MR90"/>
 <instance part="GND1" gate="1" x="60.96" y="40.64"/>
 <instance part="SUPPLY1" gate="G$1" x="63.5" y="99.06"/>
 <instance part="GND2" gate="1" x="63.5" y="66.04"/>
@@ -8646,7 +8684,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="50.8" y1="55.88" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
 <junction x="55.88" y="58.42"/>
-<pinref part="R2" gate="G$1" pin="S"/>
+<pinref part="R2" gate="G$1" pin="E"/>
 <wire x1="53.34" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 <junction x="55.88" y="73.66"/>
 </segment>
@@ -8670,9 +8708,9 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="71.12" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
 <junction x="71.12" y="45.72"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="78.74" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="45.72" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -8698,16 +8736,18 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="63.5" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="81.28" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="3"/>
 <wire x1="63.5" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="E"/>
 <wire x1="71.12" y1="58.42" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <junction x="71.12" y="58.42"/>
 <junction x="71.12" y="58.42"/>
-<pinref part="R2" gate="G$1" pin="A"/>
-<wire x1="48.26" y1="81.28" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="S"/>
+<wire x1="48.26" y1="78.74" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="76.2" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
